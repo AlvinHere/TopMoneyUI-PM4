@@ -18,7 +18,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
 
-use IrwanS\Topmoney\form\SimpleForm;
+use Jojoe77777\FormAPI\SimpleForm;
 
 class Main extends PluginBase implements Listener {
 
@@ -53,7 +53,7 @@ class Main extends PluginBase implements Listener {
                     $this->TopMoney($sender);
                     return true;
                 }else{
-                    $sender->sendMessage("Use this cmd in Game!");
+                    $sender->sendMessage("In-Game Only!");
                 }
             break;
         }
