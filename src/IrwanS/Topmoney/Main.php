@@ -1,6 +1,6 @@
 <?php
 
-namespace IrwanS\TopMoneyUI;
+namespace IrwanS\Topmoney;
 
 /*
 
