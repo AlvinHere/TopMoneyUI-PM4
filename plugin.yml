@@ -1,5 +1,5 @@
 name: TopMoneyUI
-main: Xeon\Topmoney\Main
+main: IrwanS\Topmoney\Main
 version: 1.0.4
 api: [4.0.0]
 author: IrwanS & AlvinHere
