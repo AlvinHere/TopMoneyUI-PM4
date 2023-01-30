@@ -5,13 +5,13 @@ namespace IrwanS\Topmoney;
 /*
  *
  * name : TopMoneyUI
- * version : 0.1
+ * version : 1.0.4
  * info : don't change the author
  *
  */
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\Player; 
+use pocketmine\player\Player; 
 use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;
@@ -34,13 +34,13 @@ class Main extends PluginBase implements Listener {
         return new SimpleForm($function);
     }
 
-	public function onLoad(){
+	public function onLoad(): void{
 		$this->saveResource("setting.yml");  
   }
 
-	public function onEnable(){
+	public function onEnable(): void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->getServer()->getLogger()->info("TopMoneyUI by IrwanS");
+		$this->getServer()->getLogger()->info("TopMoneyUI Enabled");
 		@mkdir($this->getDataFolder());
     $this->saveDefaultConfig();
 		$this->config = new Config($this->getDataFolder() . "setting.yml", Config::YAML);
