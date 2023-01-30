@@ -1,8 +1,8 @@
 name: TopMoneyUI
-main: IrwanS\Topmoney\Main
-version: 0.1
-api: [3.0.0, 4.0.0]
-author: IrwanS
+main: Xeon\Topmoney\Main
+version: 1.0.4
+api: [4.0.0]
+author: IrwanS & AlvinHere
 
 commands:
     topmoney:
